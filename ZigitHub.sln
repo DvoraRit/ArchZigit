@@ -1,0 +1,96 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32319.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZigitHub.Api", "ZigitHub.Api\ZigitHub.Api.csproj", "{66452696-EAD3-4E9D-8C91-47DDBEC5F125}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZigitHub.Application", "ZigitHub.Application\ZigitHub.Application.csproj", "{3C78E138-BF64-4FB4-853F-C7C68F4D8CCA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZigitHub.Infra.IoC", "ZigitHub.Infra.IoC\ZigitHub.Infra.IoC.csproj", "{2ECC5DB6-1C06-4770-A644-2F1F70770C22}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZigitHub.Domain", "ZigitHub.Domain\ZigitHub.Domain.csproj", "{6F78B7B0-668E-4B0C-82FB-6EA5D2DE12D2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZigitHub.Infra.Data", "ZigitHub.Infra.Data\ZigitHub.Infra.Data.csproj", "{D861E2F4-A20F-4D7E-B0FF-1B9B2FD9144A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZigitHub.Logger", "ZigitHub.Logger\ZigitHub.Logger.csproj", "{42E49CA5-6A52-416F-A50C-96D0A815636A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZigitHub.Domain.Core", "ZigitHub.Domain.Core\ZigitHub.Domain.Core.csproj", "{2ECB329E-176D-4604-A901-593DB33B3B4A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZigitHub.Infra.Bus", "ZigitHub.Infra.Bus\ZigitHub.Infra.Bus.csproj", "{14D0B619-036D-466F-A3C3-A97AB5AA0DE9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZigitHub.Api.Tests", "ZigitHub.Api.Tests\ZigitHub.Api.Tests.csproj", "{DAC4F350-CA16-4E99-B575-CFF6B72B3AD7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZigitHub.Configurations", "ZigitHub.Configurations\ZigitHub.Configurations.csproj", "{7368DDDB-A796-4D56-91C6-5C40A9D541B6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZigitHub.Scheduler", "ZigitHub.Scheduler\ZigitHub.Scheduler.csproj", "{324EE50C-EACA-4C03-A06B-0D651E9CC773}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{06E9B795-1684-4229-9CCA-9DFD1D2A682A}"
+	ProjectSection(SolutionItems) = preProject
+		bitbucket-pipelines.yml = bitbucket-pipelines.yml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZigitHub.Auth", "ZigitHub.Auth\ZigitHub.Auth.csproj", "{867FB13B-91A0-4930-AAC5-9E6F644F2D59}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66452696-EAD3-4E9D-8C91-47DDBEC5F125}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66452696-EAD3-4E9D-8C91-47DDBEC5F125}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66452696-EAD3-4E9D-8C91-47DDBEC5F125}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66452696-EAD3-4E9D-8C91-47DDBEC5F125}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C78E138-BF64-4FB4-853F-C7C68F4D8CCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C78E138-BF64-4FB4-853F-C7C68F4D8CCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C78E138-BF64-4FB4-853F-C7C68F4D8CCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C78E138-BF64-4FB4-853F-C7C68F4D8CCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2ECC5DB6-1C06-4770-A644-2F1F70770C22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ECC5DB6-1C06-4770-A644-2F1F70770C22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ECC5DB6-1C06-4770-A644-2F1F70770C22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ECC5DB6-1C06-4770-A644-2F1F70770C22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F78B7B0-668E-4B0C-82FB-6EA5D2DE12D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F78B7B0-668E-4B0C-82FB-6EA5D2DE12D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F78B7B0-668E-4B0C-82FB-6EA5D2DE12D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F78B7B0-668E-4B0C-82FB-6EA5D2DE12D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D861E2F4-A20F-4D7E-B0FF-1B9B2FD9144A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D861E2F4-A20F-4D7E-B0FF-1B9B2FD9144A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D861E2F4-A20F-4D7E-B0FF-1B9B2FD9144A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D861E2F4-A20F-4D7E-B0FF-1B9B2FD9144A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42E49CA5-6A52-416F-A50C-96D0A815636A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42E49CA5-6A52-416F-A50C-96D0A815636A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42E49CA5-6A52-416F-A50C-96D0A815636A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42E49CA5-6A52-416F-A50C-96D0A815636A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2ECB329E-176D-4604-A901-593DB33B3B4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ECB329E-176D-4604-A901-593DB33B3B4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ECB329E-176D-4604-A901-593DB33B3B4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ECB329E-176D-4604-A901-593DB33B3B4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14D0B619-036D-466F-A3C3-A97AB5AA0DE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14D0B619-036D-466F-A3C3-A97AB5AA0DE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14D0B619-036D-466F-A3C3-A97AB5AA0DE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14D0B619-036D-466F-A3C3-A97AB5AA0DE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAC4F350-CA16-4E99-B575-CFF6B72B3AD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAC4F350-CA16-4E99-B575-CFF6B72B3AD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAC4F350-CA16-4E99-B575-CFF6B72B3AD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAC4F350-CA16-4E99-B575-CFF6B72B3AD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7368DDDB-A796-4D56-91C6-5C40A9D541B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7368DDDB-A796-4D56-91C6-5C40A9D541B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7368DDDB-A796-4D56-91C6-5C40A9D541B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7368DDDB-A796-4D56-91C6-5C40A9D541B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{324EE50C-EACA-4C03-A06B-0D651E9CC773}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{324EE50C-EACA-4C03-A06B-0D651E9CC773}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{324EE50C-EACA-4C03-A06B-0D651E9CC773}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{324EE50C-EACA-4C03-A06B-0D651E9CC773}.Release|Any CPU.Build.0 = Release|Any CPU
+		{867FB13B-91A0-4930-AAC5-9E6F644F2D59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{867FB13B-91A0-4930-AAC5-9E6F644F2D59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{867FB13B-91A0-4930-AAC5-9E6F644F2D59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{867FB13B-91A0-4930-AAC5-9E6F644F2D59}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BFCEAAE6-C848-44B8-8066-708DC736681C}
+	EndGlobalSection
+EndGlobal
