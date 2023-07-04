@@ -22,8 +22,4 @@
     <ProjectReference Include="..\ZigitHub.Domain\ZigitHub.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Repositories\" />
-  </ItemGroup>
-
 </Project>

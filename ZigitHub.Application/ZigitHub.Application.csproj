@@ -12,13 +12,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ZigitHub.Domain.Core\ZigitHub.Domain.Core.csproj" />
     <ProjectReference Include="..\ZigitHub.Domain\ZigitHub.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Models\" />
-    <Folder Include="Services\" />
-    <Folder Include="ViewModels\" />
   </ItemGroup>
 
 </Project>
