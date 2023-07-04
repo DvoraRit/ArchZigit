@@ -12,9 +12,9 @@ namespace ZigitHub.Infra.Data.Repositories
     public class UserRepository : IUserRepository
     {
 
-        private UsersDBContext _context;
+        private ApplicationContext _context;
 
-        public UserRepository(UsersDBContext context)
+        public UserRepository(ApplicationContext context)
         {
             this._context = context;
         }

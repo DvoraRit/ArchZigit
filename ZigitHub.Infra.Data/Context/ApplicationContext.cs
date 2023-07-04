@@ -5,6 +5,8 @@ namespace ZigitHub.Infra.Data.Context
 {
     public partial class ApplicationContext : DbContext
     {
+        //all tables should be here
+        public DbSet<User> users { get; set; }
 
         public ApplicationContext()
         {
@@ -45,11 +47,10 @@ namespace ZigitHub.Infra.Data.Context
             OnModelCreatingPartial(modelBuilder);
         }
 
-        //protected override void Seed(ApplicationContext context)
-        //{
-           
-        //    context.Users.Add(new User { Id = 1, Full_name = "Test User", Email = "test@gmail.com" });
-        //}
+        protected void Seed(ApplicationContext context)
+        {
+            context.users.Add(new User { Full_name = "John Doe", Email = "john@gmail.com" });
+        }
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
     }
 }
