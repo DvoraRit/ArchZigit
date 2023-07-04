@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AutoMapper;
 using ZigitHub.Application.Interfaces;
 using ZigitHub.Application.ViewModels;
 using ZigitHub.Domain.Core.Bus;
@@ -15,10 +16,12 @@ namespace ZigitHub.Application.Services
     {
         private IUserRepository userRepository;
         private readonly IMediatorHandler _bus;//MediatR for Domain Events and Notifications
-        public UserService(IUserRepository userRepository, IMediatorHandler bus)
+        private readonly IMapper _mapper;
+        public UserService(IUserRepository userRepository, IMediatorHandler bus, IMapper mapper)
         {
             this.userRepository = userRepository;
             this._bus = bus;
+            this._mapper = mapper;
         }
         public UserViewModel GetUsers()
         {
@@ -30,15 +33,9 @@ namespace ZigitHub.Application.Services
 
         public void Create(UserViewModel userViewModel)
         {
-            //before we use the bus to send a message, it needs to be a type of command.
-            var createUserCommand = new CreateUserCommand(
-                userViewModel.Full_name,
-                userViewModel.Email,
-                userViewModel.Is_admin
-                );
-
+     
             //send the command to the bus
-            _bus.SendCommand(createUserCommand);
+            _bus.SendCommand(_mapper.Map<CreateUserCommand>(userViewModel));
 
         }
 
